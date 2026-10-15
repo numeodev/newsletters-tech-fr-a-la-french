@@ -22,7 +22,7 @@ jobs:
           fail: false
       - name: Ouvrir une issue si des liens sont cassés
         if: steps.lychee.outputs.exit_code != 0
-        uses: peter-evans/create-issue-from-file@v5
+        uses: peter-evans/create-issue-from-file@v6
         with:
           title: Liens morts détectés
           content-filepath: ./lychee/out.md
