@@ -1,0 +1,16 @@
+# Modèle de fiche : copiez ce fichier en `newsletters/<slug>.yml`
+# (slug = nom en minuscules, sans accents, mots séparés par des tirets).
+# Les fichiers commençant par `_` sont ignorés.
+
+# Obligatoire
+nom: La Craft Letter
+url: https://www.craftletter.fr/
+description: "Pascal partage et commente des articles relatifs au dev, aux langages, à l'architecture logicielle, à la méthodologie, à des projets open source, à des conférences, à des opinions... mais pas à l'IA."  # gardez les guillemets
+thematiques: [dev, web, open-source]      # 1 à 3 valeurs parmi thematiques.yml, dans UNE seule paire de crochets ; la première sert au classement
+frequence: hebdomadaire     # quotidienne | hebdomadaire | bimensuelle | mensuelle | irreguliere
+
+# Facultatif
+auteur: Pascal Le Merrer
+gratuite: true              # false si l'accès est payant
+
+
