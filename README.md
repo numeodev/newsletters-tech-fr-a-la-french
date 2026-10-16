@@ -1,6 +1,6 @@
-# Newsletters tech françaises
+# Newsletters tech francophones
 
-Un répertoire ouvert et collaboratif des newsletters tech en français : développement, data, IA, sécurité, produit, startups…
+Un répertoire ouvert et collaboratif des newsletters tech en français, d’où qu’elles viennent (France, Belgique, Suisse, Québec…) : développement, data, IA, sécurité, produit, startups…
 
 👉 **Il en manque une ?** [Proposez-la en 1 minute via le formulaire](../../issues/new?template=ajout-newsletter.yml) ou [ouvrez une pull request](CONTRIBUTING.md).
 
@@ -39,5 +39,5 @@ Toutes les contributions sont bienvenues : ajout d'une newsletter, correction d'
 
 ## Licence
 
-- **Données** (fiches, thématiques, liste) : [CC BY 4.0](LICENSE). Vous pouvez les réutiliser librement, y compris à des fins commerciales, à condition de citer la source : « [Newsletters tech françaises](https://github.com/numeodev/newsletters-tech-fr-a-la-french), CC BY 4.0 ».
+- **Données** (fiches, thématiques, liste) : [CC BY 4.0](LICENSE). Vous pouvez les réutiliser librement, y compris à des fins commerciales, à condition de citer la source : « [Newsletters tech francophones](https://github.com/numeodev/newsletters-tech-fr), CC BY 4.0 ».
 - **Code** (scripts et workflows) : [MIT](LICENSE-CODE).
