@@ -1,0 +1,15 @@
+# Modèle de fiche : copiez ce fichier en `newsletters/<slug>.yml`
+# (slug = nom en minuscules, sans accents, mots séparés par des tirets).
+# Dernière modification : 2026-10-15 14:06:37
+# Les fichiers commençant par `_` sont ignorés.
+
+# Obligatoire
+nom: Lettre d’information du CNLL
+url: https://cnll.fr/ 
+description: "Newsletter mensuelle du CNLL, qui représente les entreprises du logiciel libre en France : actualités, prises de position publiques, publications, événements (Acteurs du Libre, OSXP)"  # gardez les guillemets
+thematiques: [open-source,startup ]      # 1 à 3 valeurs parmi thematiques.yml, dans UNE seule paire de crochets ; la première sert au classement
+frequence: mensuelle     # quotidienne | hebdomadaire | bimensuelle | mensuelle | irreguliere
+
+# Facultatif
+auteur: CNLL
+gratuite: true              # false si l'accès est payant

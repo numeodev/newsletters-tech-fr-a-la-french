@@ -5,8 +5,8 @@
 # Obligatoire
 nom: Ma Newsletter
 url: https://exemple.fr/newsletter
-description: Une phrase qui dit de quoi parle la newsletter (200 caractères max).
-thematiques: [dev]          # 1 à 3 valeurs parmi thematiques.yml, la première sert au classement
+description: "Une phrase qui dit de quoi parle la newsletter (200 caractères max)."  # gardez les guillemets
+thematiques: [dev, ia]      # 1 à 3 valeurs parmi thematiques.yml, dans UNE seule paire de crochets ; la première sert au classement
 frequence: hebdomadaire     # quotidienne | hebdomadaire | bimensuelle | mensuelle | irreguliere
 
 # Facultatif

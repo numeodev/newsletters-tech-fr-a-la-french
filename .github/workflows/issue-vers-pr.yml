@@ -1,0 +1,88 @@
+name: Proposition vers pull request
+
+on:
+  issues:
+    types: [opened, edited, labeled]
+  # Pour traiter une issue ouverte avant la mise en place de ce workflow
+  workflow_dispatch:
+    inputs:
+      numero:
+        description: Numéro de l'issue à transformer en fiche
+        required: true
+        type: number
+
+permissions:
+  contents: write
+  pull-requests: write
+  issues: write
+
+concurrency:
+  group: issue-${{ github.event.issue.number || inputs.numero }}
+  cancel-in-progress: true
+
+jobs:
+  creer-fiche:
+    if: >-
+      github.event_name == 'workflow_dispatch' ||
+      (github.event.issue.state == 'open' &&
+       contains(github.event.issue.labels.*.name, 'ajout') &&
+       (github.event.action != 'labeled' || github.event.label.name == 'ajout'))
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install pyyaml
+
+      - name: Lire l'issue
+        id: issue
+        env:
+          GH_TOKEN: ${{ github.token }}
+          NUMERO: ${{ github.event.issue.number || inputs.numero }}
+        run: |
+          gh issue view "$NUMERO" --repo "$GITHUB_REPOSITORY" --json body,state,labels > "$RUNNER_TEMP/issue.json"
+          if [ "$(jq -r .state "$RUNNER_TEMP/issue.json")" != "OPEN" ] || \
+             [ "$(jq '[.labels[].name] | index("ajout") != null' "$RUNNER_TEMP/issue.json")" != "true" ]; then
+            echo "::error::L'issue #$NUMERO doit être ouverte et porter le label « ajout »"
+            exit 1
+          fi
+          jq -r .body "$RUNNER_TEMP/issue.json" > "$RUNNER_TEMP/body.md"
+          echo "numero=$NUMERO" >> "$GITHUB_OUTPUT"
+
+      - name: Créer la fiche depuis l'issue
+        id: fiche
+        env:
+          # Le contenu de l'issue est lu depuis un fichier, jamais interpolé dans le script
+          ISSUE_BODY_FILE: ${{ runner.temp }}/body.md
+          MESSAGE_FILE: ${{ runner.temp }}/message.md
+        run: python scripts/issue_vers_fiche.py
+
+      - name: Ouvrir ou mettre à jour la pull request
+        id: pr
+        if: steps.fiche.outputs.statut == 'ok'
+        uses: peter-evans/create-pull-request@v7
+        with:
+          branch: ajout/issue-${{ steps.issue.outputs.numero }}
+          add-paths: newsletters/${{ steps.fiche.outputs.slug }}.yml
+          commit-message: "ajout: ${{ steps.fiche.outputs.nom }}"
+          title: "Ajout : ${{ steps.fiche.outputs.nom }}"
+          body: |
+            Fiche générée automatiquement à partir de #${{ steps.issue.outputs.numero }}.
+
+            Closes #${{ steps.issue.outputs.numero }}
+          labels: ajout
+
+      - name: Préparer le message de succès
+        if: steps.fiche.outputs.statut == 'ok'
+        env:
+          MESSAGE_FILE: ${{ runner.temp }}/message.md
+          PR_URL: ${{ steps.pr.outputs.pull-request-url }}
+        run: |
+          printf '✅ Merci ! La fiche a été créée et passe la validation : %s\n\nElle sera publiée dès que la pull request aura été relue et fusionnée.\n' "$PR_URL" > "$MESSAGE_FILE"
+
+      - name: Commenter l'issue
+        env:
+          GH_TOKEN: ${{ github.token }}
+          NUMERO: ${{ steps.issue.outputs.numero }}
+        run: gh issue comment "$NUMERO" --repo "$GITHUB_REPOSITORY" --body-file "${{ runner.temp }}/message.md"

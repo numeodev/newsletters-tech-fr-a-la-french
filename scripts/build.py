@@ -101,7 +101,11 @@ def valider():
         try:
             data = yaml.safe_load(chemin.read_text(encoding="utf-8"))
         except yaml.YAMLError as e:
-            erreurs.append(f"{chemin.name} : YAML invalide ({e})")
+            erreurs.append(
+                f"{chemin.name} : YAML invalide ({e})\n"
+                "  Astuce : mettez la description entre guillemets si elle contient « : », "
+                "et écrivez les thématiques dans une seule liste, ex. [dev, ia]"
+            )
             continue
         erreurs_fiche = valider_fiche(chemin, data, thematiques)
         erreurs.extend(erreurs_fiche)

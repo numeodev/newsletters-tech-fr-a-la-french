@@ -1,5 +1,5 @@
 blank_issues_enabled: true
 contact_links:
   - name: Guide de contribution
-    url: https://github.com/numeodev/newsletters-tech-fr/blob/main/CONTRIBUTING.md
+    url: https://github.com/numeodev/newsletters-tech-fr-a-la-french/blob/main/CONTRIBUTING.md
     about: Comment ajouter une fiche vous-même via une pull request
