@@ -29,8 +29,9 @@ Un répertoire ouvert et collaboratif des newsletters tech en français, d’où
 
 - **[Cybernetica](https://www.cybernetica.fr/tag/newsletter/)** : Essais sur la tech, la souveraineté numérique, l’IA et la cybersécurité. La plupart des éditions récentes sont réservées aux abonnés payants. _(hebdomadaire, par Tariq Krim)_
 - **[Repost_](https://repost.hypotheses.org/liste-de-diffusion)** : Blog du Centre Internet et Société du CNRS : analyses, extraits et vidéos de chercheurs sur l’IA et le numérique dans la société (éducation, politique, création, santé). _(irreguliere, par Centre Internet et Société (CIS) du CNRS, éditorial coordonné par Charline Zeitoun)_
+- **[Veille de la semaine](https://guikingone.substack.com/)** : Un récapitulatif hebdomadaire des articles / tweet / sujets marquants _(hebdomadaire, par Guillaume Loulier)_
 
-_10 newsletters référencées._
+_11 newsletters référencées._
 <!-- LISTE:FIN -->
 
 ## Contribuer
