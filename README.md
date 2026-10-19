@@ -15,6 +15,7 @@ Un répertoire ouvert et collaboratif des newsletters tech en français, d’où
 - **[La Craft Letter](https://www.craftletter.fr/)** : Pascal partage et commente des articles relatifs au dev, aux langages, à l'architecture logicielle, à la méthodologie, à des projets open source, à des conférences, à des opinions... mais pas à l'IA. _(hebdomadaire, par Pascal Le Merrer)_
 - **[Quoi de neuf les devs ?](https://quoi-de-neuf-les-devs.happyto.dev/)** : Veille dev hebdo en français : actus, articles, vidéos, podcasts, interviews et offres d’emploi. Contenu bonus pour les abonnés payants. _(hebdomadaire, par Frédéric Blanc (HappyToDev))_
 - **[Still D.R.E.Y](https://dredrey.kessel.media)** : Sélection d'articles tech par Audrey Droyen. (Je ne suis pas l'auteure, seulement une lectrice fan) _(mensuelle, par Audrey Droyen)_
+- **[Veille l’infini et au-delà](https://sirchamallow.substack.com/)** : Carnet de veille tech au ton décalé : outils dev et open source, logiciels par OS, actu numérique en vrac et coups de cœur audio/vidéo. _(irreguliere, par Pierre Lemasson)_
 - **[Veille techno de Camille Roux](https://www.camilleroux.com/veille/)** : Sélection d’articles, outils et projets lus et commentés à la main : dev, IA et LLM, cybersécurité, open source, entrepreneuriat tech. _(hebdomadaire, par Camille Roux, cofondateur de Human Coders)_
 
 ### DevOps & cloud
@@ -41,7 +42,7 @@ Un répertoire ouvert et collaboratif des newsletters tech en français, d’où
 - **[Repost_](https://repost.hypotheses.org/liste-de-diffusion)** : Blog du Centre Internet et Société du CNRS : analyses, extraits et vidéos de chercheurs sur l’IA et le numérique dans la société (éducation, politique, création, santé). _(irreguliere, par Centre Internet et Société (CIS) du CNRS, éditorial coordonné par Charline Zeitoun)_
 - **[Veille de la semaine](https://guikingone.substack.com/)** : Un récapitulatif hebdomadaire des articles / tweet / sujets marquants _(hebdomadaire, par Guillaume Loulier)_
 
-_15 newsletters référencées._
+_16 newsletters référencées._
 <!-- LISTE:FIN -->
 
 ## Contribuer
