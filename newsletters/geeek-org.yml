@@ -1,0 +1,7 @@
+nom: Geeek.org
+url: https://www.geeek.org/
+description: 'Blog tech indépendant avec abonnement par mail : tutoriels, tests et retours d’expérience en dev, cybersécurité, IA, domotique et self-hosting.'
+thematiques: [dev, securite, ia]
+frequence: irreguliere
+auteur: Ludovic Toinel
+gratuite: true
