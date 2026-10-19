@@ -10,6 +10,7 @@ Un répertoire ouvert et collaboratif des newsletters tech en français, d’où
 <!-- LISTE:DEBUT -->
 ### Développement
 
+- **[Geeek.org](https://www.geeek.org/)** : Blog tech indépendant avec abonnement par mail : tutoriels, tests et retours d’expérience en dev, cybersécurité, IA, domotique et self-hosting. _(irreguliere, par Ludovic Toinel)_
 - **[Human Coders News](https://news.humancoders.com/)** : Les meilleures actus dev de la communauté Human Coders News, qui a partagé plus de 20 000 liens depuis 2011 : langages, front, DevOps, IA, open source. Chaque jeudi matin. _(hebdomadaire, par Human Coders)_
 - **[La Craft Letter](https://www.craftletter.fr/)** : Pascal partage et commente des articles relatifs au dev, aux langages, à l'architecture logicielle, à la méthodologie, à des projets open source, à des conférences, à des opinions... mais pas à l'IA. _(hebdomadaire, par Pascal Le Merrer)_
 - **[Quoi de neuf les devs ?](https://quoi-de-neuf-les-devs.happyto.dev/)** : Veille dev hebdo en français : actus, articles, vidéos, podcasts, interviews et offres d’emploi. Contenu bonus pour les abonnés payants. _(hebdomadaire, par Frédéric Blanc (HappyToDev))_
@@ -40,7 +41,7 @@ Un répertoire ouvert et collaboratif des newsletters tech en français, d’où
 - **[Repost_](https://repost.hypotheses.org/liste-de-diffusion)** : Blog du Centre Internet et Société du CNRS : analyses, extraits et vidéos de chercheurs sur l’IA et le numérique dans la société (éducation, politique, création, santé). _(irreguliere, par Centre Internet et Société (CIS) du CNRS, éditorial coordonné par Charline Zeitoun)_
 - **[Veille de la semaine](https://guikingone.substack.com/)** : Un récapitulatif hebdomadaire des articles / tweet / sujets marquants _(hebdomadaire, par Guillaume Loulier)_
 
-_14 newsletters référencées._
+_15 newsletters référencées._
 <!-- LISTE:FIN -->
 
 ## Contribuer
