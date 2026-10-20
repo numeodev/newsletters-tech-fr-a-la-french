@@ -26,6 +26,7 @@ Un répertoire ouvert et collaboratif des newsletters tech en français, d’où
 ### Sécurité
 
 - **[Erreur 403](https://newsletter.erreur403.fr/subscribe)** : Cyberattaques, vulnérabilités, fuites de données, ransomware, zero-days, pentest, threat intelligence : retrouvez chaque semaine une sélection d’infos, d’outils et d’articles techniques. _(hebdomadaire)_
+- **[Zeroday – Hacking & Sécurité](https://zerodaycyberacademy.substack.com/)** : Veille cyber en français : failles exploitées à patcher en priorité, actu des incidents en France, analyses (dont sécurité des agents IA) et offres d’emploi. _(hebdomadaire, par Naïm Aouaichia)_
 
 ### Open source
 
@@ -38,7 +39,7 @@ Un répertoire ouvert et collaboratif des newsletters tech en français, d’où
 - **[Repost_](https://repost.hypotheses.org/liste-de-diffusion)** : Blog du Centre Internet et Société du CNRS : analyses, extraits et vidéos de chercheurs sur l’IA et le numérique dans la société (éducation, politique, création, santé). _(irreguliere, par Centre Internet et Société (CIS) du CNRS, éditorial coordonné par Charline Zeitoun)_
 - **[Veille de la semaine](https://guikingone.substack.com/)** : Un récapitulatif hebdomadaire des articles / tweet / sujets marquants _(hebdomadaire, par Guillaume Loulier)_
 
-_15 newsletters référencées._
+_16 newsletters référencées._
 <!-- LISTE:FIN -->
 
 ## Contribuer
