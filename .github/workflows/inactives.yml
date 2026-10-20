@@ -1,0 +1,40 @@
+name: Nettoyage des newsletters inactives
+
+on:
+  schedule:
+    - cron: "0 7 2 * *" # le 2 de chaque mois
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  nettoyer:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v7
+        with:
+          python-version: "3.12"
+      - run: pip install pyyaml
+
+      - name: Supprimer les fiches inactives depuis plus de 6 mois
+        id: nettoyage
+        env:
+          RAPPORT_FILE: ${{ runner.temp }}/rapport.md
+        run: |
+          python scripts/activite.py nettoyer
+          cat "$RAPPORT_FILE" >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Proposer les suppressions en pull request
+        if: steps.nettoyage.outputs.supprimees != '0'
+        uses: peter-evans/create-pull-request@v7
+        with:
+          branch: nettoyage/inactives
+          add-paths: newsletters/*.yml
+          commit-message: "suppression: newsletters inactives depuis plus de 6 mois"
+          title: "Suppression de ${{ steps.nettoyage.outputs.supprimees }} newsletter(s) inactive(s)"
+          body-path: ${{ runner.temp }}/rapport.md
+          labels: inactive
+          delete-branch: true

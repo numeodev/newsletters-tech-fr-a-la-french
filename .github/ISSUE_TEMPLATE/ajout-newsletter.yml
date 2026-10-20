@@ -62,6 +62,12 @@ body:
     id: auteur
     attributes:
       label: Auteur·rice ou organisation (facultatif)
+  - type: input
+    id: flux
+    attributes:
+      label: Flux RSS (facultatif)
+      description: Sert à vérifier automatiquement que la newsletter est active. Laissez vide si vous ne le connaissez pas, il sera cherché automatiquement.
+      placeholder: https://
   - type: checkboxes
     id: criteres
     attributes:

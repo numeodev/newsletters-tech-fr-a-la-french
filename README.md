@@ -51,5 +51,5 @@ Toutes les contributions sont bienvenues : ajout d'une newsletter, correction d'
 
 ## Licence
 
-- **Données** (fiches, thématiques, liste) : [CC BY 4.0](LICENSE). Vous pouvez les réutiliser librement, y compris à des fins commerciales, à condition de citer la source : « [Newsletters tech francophones](https://github.com/numeodev/newsletters-tech-fr), CC BY 4.0 ».
+- **Données** (fiches, thématiques, liste) : [CC BY 4.0](LICENSE). Vous pouvez les réutiliser librement, y compris à des fins commerciales, à condition de citer la source : « [Newsletters tech francophones](https://github.com/numeodev/newsletters-tech-fr-a-la-french), CC BY 4.0 ».
 - **Code** (scripts et workflows) : [MIT](LICENSE-CODE).

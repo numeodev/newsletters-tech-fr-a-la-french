@@ -3,7 +3,8 @@
 
 Lit le corps de l'issue dans le fichier désigné par ISSUE_BODY_FILE, écrit la fiche,
 la valide avec build.py et écrit dans MESSAGE_FILE le commentaire à poster sur l'issue.
-Sorties GitHub Actions : `statut` (ok | erreur), `slug`, `nom`.
+Vérifie aussi l'activité de la newsletter (dernière édition de moins de 6 mois).
+Sorties GitHub Actions : `statut` (ok | erreur), `slug`, `nom`, `activite`.
 """
 
 import os
@@ -15,6 +16,7 @@ from pathlib import Path
 import yaml
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
+import activite  # noqa: E402
 import build  # noqa: E402
 
 SANS_REPONSE = "_No response_"
@@ -53,6 +55,7 @@ def construire_fiche(sections, thematiques):
     themes_bruts = trouver(sections, "Thématiques") or ""
     frequence = trouver(sections, "Fréquence")
     auteur = trouver(sections, "Auteur")
+    flux = trouver(sections, "Flux RSS")
     verifications = trouver(sections, "Vérifications") or ""
 
     themes = []
@@ -71,6 +74,8 @@ def construire_fiche(sections, thematiques):
     }
     if auteur:
         fiche["auteur"] = auteur
+    if flux:
+        fiche["flux"] = flux
     fiche["gratuite"] = not re.search(r"- \[[xX]\] Elle est payante", verifications)
     return {k: v for k, v in fiche.items() if v is not None}, erreurs
 
@@ -109,6 +114,22 @@ def main():
         elif chemin.exists():
             erreurs.append(f"une fiche `{chemin.name}` existe déjà dans le répertoire")
         else:
+            date, source = activite.derniere_edition(fiche["url"], fiche.get("flux"))
+            if date and activite.est_inactive(date):
+                erreurs.append(
+                    f"la dernière édition détectée date du {activite.formater_date(date)} (source : {source}). "
+                    "Le répertoire ne référence que les newsletters ayant publié dans les 6 derniers mois. "
+                    "Si cette date est fausse, indiquez le flux RSS de la newsletter dans le champ « Flux RSS » de l'issue"
+                )
+            elif date:
+                etat_activite = f"✅ Activité vérifiée : dernière édition le {activite.formater_date(date)} (source : {source})."
+            else:
+                etat_activite = (
+                    "⚠️ Activité non vérifiable automatiquement (aucun flux RSS ni date de publication trouvés) : "
+                    "à vérifier lors de la relecture."
+                )
+
+        if not erreurs:
             chemin.write_text(
                 yaml.safe_dump(fiche, allow_unicode=True, sort_keys=False, default_flow_style=None, width=1000),
                 encoding="utf-8",
@@ -128,7 +149,7 @@ def main():
         print("\n".join(erreurs))
         return
 
-    ecrire_sortie(statut="ok", slug=slug, nom=fiche["nom"])
+    ecrire_sortie(statut="ok", slug=slug, nom=fiche["nom"], activite=etat_activite)
     print(f"Fiche newsletters/{slug}.yml créée")
 
 

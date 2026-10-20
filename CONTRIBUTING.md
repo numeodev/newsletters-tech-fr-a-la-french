@@ -69,6 +69,7 @@ Ne modifiez pas la liste dans le `README.md` : elle est régénérée automatiqu
 | `frequence` | oui | `quotidienne`, `hebdomadaire`, `bimensuelle`, `mensuelle` ou `irreguliere` |
 | `auteur` | non | Auteur·rice ou organisation |
 | `gratuite` | non | `false` si l'accès est payant (par défaut on suppose qu'elle est gratuite) |
+| `flux` | non | URL du flux RSS ou Atom, en `https://`. Inutile si le flux est détecté automatiquement (voir ci-dessous) |
 
 ## Critères d'inclusion
 
@@ -76,10 +77,21 @@ Une newsletter est acceptée si :
 
 - elle est **rédigée en français** ;
 - elle traite **principalement de tech** (au sens large : dev, data, produit, business de la tech…) ;
-- elle est **active** : au moins une édition dans les 6 derniers mois ;
+- elle est **active** : au moins une édition dans les 6 derniers mois (vérifié automatiquement, voir ci-dessous) ;
 - elle est **éditoriale** : pas une simple newsletter promotionnelle d'un produit.
 
 Vous pouvez proposer votre propre newsletter, c'est même encouragé.
+
+## Vérification de l'activité
+
+L'activité de chaque newsletter est vérifiée automatiquement à partir de son flux RSS ou Atom. Le flux est cherché sur la page de la newsletter et aux adresses habituelles des plateformes (Substack, Ghost, WordPress, Kessel…). Pour Beehiiv, ce sont les dates de la page d'archive qui sont utilisées.
+
+- **À l'ajout via le formulaire** : une newsletter dont la dernière édition détectée date de plus de 6 mois est refusée. Si aucune date n'est trouvée, la fiche est quand même proposée, et l'activité est vérifiée à la main lors de la relecture.
+- **Chaque mois** : les fiches sans nouvelle édition depuis plus de 6 mois sont retirées, via une pull request relue avant fusion.
+
+Si la date détectée est fausse (le flux trouvé est celui d'un blog et non de la newsletter, par exemple), renseignez le bon flux dans le champ `flux` de la fiche. Les newsletters sans flux public, comme celles publiées sur LinkedIn, ne sont jamais retirées automatiquement.
+
+Pour voir ce que détecte le script en local : `python3 scripts/activite.py rapport`.
 
 ## Corriger ou retirer une fiche
 

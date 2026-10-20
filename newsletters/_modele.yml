@@ -12,3 +12,4 @@ frequence: hebdomadaire     # quotidienne | hebdomadaire | bimensuelle | mensuel
 # Facultatif
 auteur: Prénom Nom
 gratuite: true              # false si l'accès est payant
+# flux: https://exemple.fr/feed  # flux RSS/Atom, à décommenter seulement s'il n'est pas détecté automatiquement

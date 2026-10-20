@@ -21,7 +21,7 @@ DEBUT = "<!-- LISTE:DEBUT -->"
 FIN = "<!-- LISTE:FIN -->"
 
 CHAMPS_OBLIGATOIRES = {"nom", "url", "description", "thematiques", "frequence"}
-CHAMPS_FACULTATIFS = {"auteur", "gratuite"}
+CHAMPS_FACULTATIFS = {"auteur", "gratuite", "flux"}
 FREQUENCES = {"quotidienne", "hebdomadaire", "bimensuelle", "mensuelle", "irreguliere"}
 SLUG_RE = re.compile(r"^[a-z0-9]+(-[a-z0-9]+)*$")
 DESCRIPTION_MAX = 200
@@ -53,13 +53,14 @@ def valider_fiche(chemin, data, thematiques):
     if inconnus:
         erreurs.append(f"champs inconnus : {', '.join(sorted(inconnus))}")
 
-    for champ in ("nom", "url", "description", "auteur"):
+    for champ in ("nom", "url", "description", "auteur", "flux"):
         if champ in data and (not isinstance(data[champ], str) or not data[champ].strip()):
             erreurs.append(f"`{champ}` doit être un texte non vide")
 
-    url = data.get("url")
-    if isinstance(url, str) and not url.startswith("https://"):
-        erreurs.append("`url` doit commencer par https://")
+    for champ in ("url", "flux"):
+        valeur = data.get(champ)
+        if isinstance(valeur, str) and not valeur.strip().startswith("https://"):
+            erreurs.append(f"`{champ}` doit commencer par https://")
 
     description = data.get("description")
     if isinstance(description, str) and len(description) > DESCRIPTION_MAX:

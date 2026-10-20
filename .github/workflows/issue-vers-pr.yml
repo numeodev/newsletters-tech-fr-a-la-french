@@ -70,6 +70,8 @@ jobs:
           body: |
             Fiche générée automatiquement à partir de #${{ steps.issue.outputs.numero }}.
 
+            ${{ steps.fiche.outputs.activite }}
+
             Closes #${{ steps.issue.outputs.numero }}
           labels: ajout
 
@@ -78,8 +80,9 @@ jobs:
         env:
           MESSAGE_FILE: ${{ runner.temp }}/message.md
           PR_URL: ${{ steps.pr.outputs.pull-request-url }}
+          ACTIVITE: ${{ steps.fiche.outputs.activite }}
         run: |
-          printf '✅ Merci ! La fiche a été créée et passe la validation : %s\n\nElle sera publiée dès que la pull request aura été relue et fusionnée.\n' "$PR_URL" > "$MESSAGE_FILE"
+          printf '✅ Merci ! La fiche a été créée et passe la validation : %s\n\n%s\n\nElle sera publiée dès que la pull request aura été relue et fusionnée.\n' "$PR_URL" "$ACTIVITE" > "$MESSAGE_FILE"
 
       - name: Commenter l'issue
         env:
