@@ -23,10 +23,6 @@ Un répertoire ouvert et collaboratif des newsletters tech en français, d’où
 - **[La veille des Ours](https://www.linkedin.com/newsletters/la-veille-des-ours-7100088441966575616/)** : Veille technologique de Bearstech, hébergeur et infogéreur : open source, infrastructure, sécurité et souveraineté numérique. Publiée sur LinkedIn. _(bimensuelle, par Bearstech)_
 - **[RudeOps](https://www.rudeops.com/)** : Veille tech et DevOps indépendante au ton décalé : Kubernetes, CI/CD, observabilité, IA… La version mail ajoute citations et bonus absents des archives. _(hebdomadaire, par Cyril Beaufrère)_
 
-### Intelligence artificielle
-
-- **[Le Flow](https://mickaelremond.com/le-flow/)** : Lettre d’un auteur entre fiction et tech : textes en avant-première, réflexions sur l’écriture, la créativité et l’impact de l’IA et des algorithmes. _(bimensuelle, par Mickaël Rémond)_
-
 ### Sécurité
 
 - **[Erreur 403](https://newsletter.erreur403.fr/subscribe)** : Cyberattaques, vulnérabilités, fuites de données, ransomware, zero-days, pentest, threat intelligence : retrouvez chaque semaine une sélection d’infos, d’outils et d’articles techniques. _(hebdomadaire)_
@@ -42,7 +38,7 @@ Un répertoire ouvert et collaboratif des newsletters tech en français, d’où
 - **[Repost_](https://repost.hypotheses.org/liste-de-diffusion)** : Blog du Centre Internet et Société du CNRS : analyses, extraits et vidéos de chercheurs sur l’IA et le numérique dans la société (éducation, politique, création, santé). _(irreguliere, par Centre Internet et Société (CIS) du CNRS, éditorial coordonné par Charline Zeitoun)_
 - **[Veille de la semaine](https://guikingone.substack.com/)** : Un récapitulatif hebdomadaire des articles / tweet / sujets marquants _(hebdomadaire, par Guillaume Loulier)_
 
-_16 newsletters référencées._
+_15 newsletters référencées._
 <!-- LISTE:FIN -->
 
 ## Contribuer
