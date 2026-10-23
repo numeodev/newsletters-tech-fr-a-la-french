@@ -8,7 +8,6 @@ Un répertoire ouvert et collaboratif des newsletters tech en français, d’où
 
 <!-- Cette liste est générée automatiquement depuis le dossier newsletters/. Ne la modifiez pas à la main. -->
 <!-- LISTE:DEBUT -->
-
 ### Développement
 
 - **[Geeek.org](https://www.geeek.org/)** : Blog tech indépendant avec abonnement par mail : tutoriels, tests et retours d’expérience en dev, cybersécurité, IA, domotique et self-hosting. _(irreguliere, par Ludovic Toinel)_
@@ -22,7 +21,12 @@ Un répertoire ouvert et collaboratif des newsletters tech en français, d’où
 ### DevOps & cloud
 
 - **[La veille des Ours](https://www.linkedin.com/newsletters/la-veille-des-ours-7100088441966575616/)** : Veille technologique de Bearstech, hébergeur et infogéreur : open source, infrastructure, sécurité et souveraineté numérique. Publiée sur LinkedIn. _(bimensuelle, par Bearstech)_
+- **[Newsletter de Pascal Martin](https://pmartin.substack.com/)** : Sélection commentée des nouveautés AWS par quinzaine : EKS, Lambda, RDS, sécurité, annonces re:Invent, par un AWS Hero lyonnais. _(bimensuelle, par Pascal Martin)_
 - **[RudeOps](https://www.rudeops.com/)** : Veille tech et DevOps indépendante au ton décalé : Kubernetes, CI/CD, observabilité, IA… La version mail ajoute citations et bonus absents des archives. _(hebdomadaire, par Cyril Beaufrère)_
+
+### Intelligence artificielle
+
+- **[Out of the box](https://martindufresne.substack.com/)** : Un regard critique et sans filtre sur l'IA, la tech et le code. Entre design et enseignement, explorons ce que les machines font à notre expertise. _(hebdomadaire, par Martin Dufresne)_
 
 ### Sécurité
 
@@ -37,11 +41,10 @@ Un répertoire ouvert et collaboratif des newsletters tech en français, d’où
 
 - **[Cafétech](https://cafetech.kessel.media/)** : Le temps d'un café, l'actualité tech décryptée _(hebdomadaire, par Jérôme Marin)_
 - **[Cybernetica](https://www.cybernetica.fr/tag/newsletter/)** : Essais sur la tech, la souveraineté numérique, l’IA et la cybersécurité. La plupart des éditions récentes sont réservées aux abonnés payants. _(hebdomadaire, par Tariq Krim)_
-- **[Repost\_](https://repost.hypotheses.org/liste-de-diffusion)** : Blog du Centre Internet et Société du CNRS : analyses, extraits et vidéos de chercheurs sur l’IA et le numérique dans la société (éducation, politique, création, santé). _(irreguliere, par Centre Internet et Société (CIS) du CNRS, éditorial coordonné par Charline Zeitoun)_
+- **[Repost_](https://repost.hypotheses.org/liste-de-diffusion)** : Blog du Centre Internet et Société du CNRS : analyses, extraits et vidéos de chercheurs sur l’IA et le numérique dans la société (éducation, politique, création, santé). _(irreguliere, par Centre Internet et Société (CIS) du CNRS, éditorial coordonné par Charline Zeitoun)_
 - **[Veille de la semaine](https://guikingone.substack.com/)** : Un récapitulatif hebdomadaire des articles / tweet / sujets marquants _(hebdomadaire, par Guillaume Loulier)_
 
-_17 newsletters référencées._
-
+_18 newsletters référencées._
 <!-- LISTE:FIN -->
 
 ## Contribuer
