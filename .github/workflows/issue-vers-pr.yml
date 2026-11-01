@@ -61,7 +61,7 @@ jobs:
       - name: Ouvrir ou mettre à jour la pull request
         id: pr
         if: steps.fiche.outputs.statut == 'ok'
-        uses: peter-evans/create-pull-request@v7
+        uses: peter-evans/create-pull-request@v8
         with:
           branch: ajout/issue-${{ steps.issue.outputs.numero }}
           add-paths: newsletters/${{ steps.fiche.outputs.slug }}.yml
