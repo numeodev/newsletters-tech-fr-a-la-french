@@ -41,10 +41,11 @@ Un répertoire ouvert et collaboratif des newsletters tech en français, d’où
 
 - **[Cafétech](https://cafetech.kessel.media/)** : Le temps d'un café, l'actualité tech décryptée _(hebdomadaire, par Jérôme Marin)_
 - **[Cybernetica](https://www.cybernetica.fr/tag/newsletter/)** : Essais sur la tech, la souveraineté numérique, l’IA et la cybersécurité. La plupart des éditions récentes sont réservées aux abonnés payants. _(hebdomadaire, par Tariq Krim)_
+- **[Le Pavé Numérique](https://lepavenumerique.com/)** : L’actualité des nouvelles technologies et de la culture numérique, par l’éditeur de Canard PC (Presse Non Stop), avec une émission live en complément. _(hebdomadaire, par Ivan Gaudé)_
 - **[Repost_](https://repost.hypotheses.org/liste-de-diffusion)** : Blog du Centre Internet et Société du CNRS : analyses, extraits et vidéos de chercheurs sur l’IA et le numérique dans la société (éducation, politique, création, santé). _(irreguliere, par Centre Internet et Société (CIS) du CNRS, éditorial coordonné par Charline Zeitoun)_
 - **[Veille de la semaine](https://guikingone.substack.com/)** : Un récapitulatif hebdomadaire des articles / tweet / sujets marquants _(hebdomadaire, par Guillaume Loulier)_
 
-_18 newsletters référencées._
+_19 newsletters référencées._
 <!-- LISTE:FIN -->
 
 ## Contribuer
