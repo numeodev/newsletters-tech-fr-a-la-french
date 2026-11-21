@@ -26,6 +26,7 @@ Un répertoire ouvert et collaboratif des newsletters tech en français, d’où
 
 ### Intelligence artificielle
 
+- **[Newsletter de Florian Bruniaux](https://www.florian.bruniaux.com/fr/newsletter/)** : Newsletter de Florian Bruniaux (Fractional Chief AI Officer) sur le travail avec les agents IA : retours de terrain, exemples de config et contrôles à appliquer dans vos repos. _(hebdomadaire, par Florian Bruniaux)_
 - **[Out of the box](https://martindufresne.substack.com/)** : Un regard critique et sans filtre sur l'IA, la tech et le code. Entre design et enseignement, explorons ce que les machines font à notre expertise. _(hebdomadaire, par Martin Dufresne)_
 
 ### Sécurité
@@ -45,7 +46,7 @@ Un répertoire ouvert et collaboratif des newsletters tech en français, d’où
 - **[Repost_](https://repost.hypotheses.org/liste-de-diffusion)** : Blog du Centre Internet et Société du CNRS : analyses, extraits et vidéos de chercheurs sur l’IA et le numérique dans la société (éducation, politique, création, santé). _(irreguliere, par Centre Internet et Société (CIS) du CNRS, éditorial coordonné par Charline Zeitoun)_
 - **[Veille de la semaine](https://guikingone.substack.com/)** : Un récapitulatif hebdomadaire des articles / tweet / sujets marquants _(hebdomadaire, par Guillaume Loulier)_
 
-_19 newsletters référencées._
+_20 newsletters référencées._
 <!-- LISTE:FIN -->
 
 ## Contribuer
